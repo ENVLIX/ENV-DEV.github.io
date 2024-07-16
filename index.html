@@ -9,79 +9,108 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
         }
         .logo1 {
-            width: 10vw;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            width: 10%;
             max-width: 100px;
             height: auto;
-            margin: 10px;
-        }
-        .logo2 {
-            width: 20vw;
-            max-width: 200px;
-            height: auto;
-            margin: 20px;
         }
         .txt1 {
-            font-size: 4vw;
-            margin: 20px 0;
-        }
-        .txt2, .txt3, .txt4 {
-            font-size: 2vw;
-            margin: 10px 0;
-        }
-        .txt2 {
-            font-size: 1.5vw;
-        }
-        .txt3 {
-            font-size: 2vw;
-        }
-        .txt4 {
+            position: absolute;
+            top: 6%;
+            left: 15%;
             font-size: 2.5vw;
         }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
+        .txt2 {
+            position: absolute;
+            bottom: 4%;
+            left: 3%;
+            font-size: 1.2vw;
         }
-        .social-links img {
-            width: 5vw;
+        .txt3 {
+            position: absolute;
+            top: 22%;
+            left: 5%;
+            font-size: 1.5vw;
+        }
+        .txt4 {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            font-size: 2vw;
+        }
+        .logo2 {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 20%;
+            max-width: 200px;
+            height: auto;
+        }
+        .discord-logo, .youtube-logo {
+            position: absolute;
+            cursor: pointer;
+        }
+        .discord-logo {
+            bottom: 5%;
+            right: 3%;
+            width: 5%;
             max-width: 50px;
             height: auto;
-            cursor: pointer;
+        }
+        .youtube-logo {
+            bottom: 5%;
+            right: 10%;
+            width: 7%;
+            max-width: 70px;
+            height: auto;
         }
         @media (max-width: 768px) {
             .logo1, .logo2 {
-                width: 20vw;
+                width: 20%;
+                max-width: 100px;
             }
             .txt1 {
-                font-size: 6vw;
-            }
-            .txt2, .txt3, .txt4 {
                 font-size: 4vw;
+                top: 10%;
+                left: 14%;
             }
-            .social-links img {
-                width: 10vw;
+            .txt2 {
+                font-size: 2vw;
+                bottom: 3%;
+                left: 4%;
+            }
+            .txt3 {
+                font-size: 3vw;
+                top: 25%;
+                left: 6%;
+            }
+            .txt4 {
+                font-size: 4vw;
+                top: 50%;
+                left: 6%;
+            }
+            .discord-logo, .youtube-logo {
+                width: 10%;
+                max-width: 50px;
+            }
+            .discord-logo {
+                bottom: 6%;
+                right: 4%;
+            }
+            .youtube-logo {
+                bottom: 6%;
+                right: 14%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="laptop.png" alt="Company Logo" class="logo2">
         <img src="ENV DEV.png" alt="Company Logo" class="logo1">
         <h1 class="txt1">ENV Development</h1>
         <p class="txt2">-Official by Boris</p>
@@ -97,16 +126,12 @@
             =Code-<br>
             =Play-<br>
         </p>
-        <img src="laptop.png" alt="Company Logo" class="logo2">
-        <div class="social-links">
-            <a href="https://discord.gg/qXSHtUyC7g" target="_blank">
-                <img src="Discord logo.png" alt="Discord Logo">
-            </a>
-            <a href="https://www.youtube.com/@envdevelopment?si=_mVcrNicQd7CZ_Ip" target="_blank">
-                <img src="youtube logo.png" alt="YouTube Logo">
-            </a>
-        </div>
+        <a href="https://discord.gg/qXSHtUyC7g" target="_blank">
+            <img src="Discord logo.png" alt="Discord Logo" class="discord-logo">
+        </a>
+        <a href="https://www.youtube.com/@envdevelopment?si=_mVcrNicQd7CZ_Ip" target="_blank">
+            <img src="youtube logo.png" alt="YouTube Logo" class="youtube-logo">
+        </a>
     </div>
 </body>
 </html>
-
