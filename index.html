@@ -20,27 +20,43 @@
         }
         .txt1 {
             position: fixed;
-            top: 10%; /* Adjusted position for txt1 */
-            left: 20%; /* Position txt1 to the right of logo1 */
-            font-size: 3vw; /* Responsive font size for txt1 */
+            top: 18%; /* Adjusted position for txt1 */
+            left: 25%; /* Position txt1 to the right of logo1 */
+            font-size: 2.5vw; /* Responsive font size for txt1 */
+            max-width: 70%; /* Limit maximum width to prevent overlap */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text exceeds width */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
         .txt2 {
             position: fixed;
             bottom: 4%;
             left: 3%;
             font-size: 1.5vw; /* Responsive font size for txt2 */
+            max-width: 80%; /* Limit maximum width to prevent overlap */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text exceeds width */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
         .txt3 {
             position: fixed;
             top: 30%; /* Adjusted position for txt3 */
             left: 5%;
-            font-size: 2.5vw; /* Responsive font size for txt3 */
+            font-size: 2vw; /* Responsive font size for txt3 */
+            max-width: 90%; /* Limit maximum width to prevent overlap */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text exceeds width */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
         .txt4 {
             position: fixed;
-            top: 60%; /* Adjusted position for txt4 */
+            top: 55%; /* Adjusted position for txt4 */
             left: 5%;
-            font-size: 3vw; /* Responsive font size for txt4 */
+            font-size: 2.5vw; /* Responsive font size for txt4 */
+            max-width: 90%; /* Limit maximum width to prevent overlap */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text exceeds width */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
         .logo2 {
             position: fixed;
@@ -71,27 +87,27 @@
 
         @media (max-width: 768px) {
             .logo1 {
-                width: 20%; /* Adjusted size for smaller screens */
+                width: 25%; /* Adjusted size for smaller screens */
                 max-width: 150px; /* Maximum width for smaller screens */
             }
             .txt1 {
-                top: 15%; /* Adjusted position for txt1 on smaller screens */
+                top: 25%; /* Adjusted position for txt1 on smaller screens */
                 left: 30%; /* Adjusted position for txt1 on smaller screens */
-                font-size: 5vw; /* Increased font size for txt1 on smaller screens */
+                font-size: 3vw; /* Increased font size for txt1 on smaller screens */
             }
             .txt2 {
-                font-size: 2vw; /* Increased font size for txt2 on smaller screens */
+                font-size: 1.2vw; /* Adjusted font size for txt2 on smaller screens */
             }
             .txt3 {
                 top: 40%; /* Adjusted position for txt3 on smaller screens */
-                font-size: 3vw; /* Increased font size for txt3 on smaller screens */
+                font-size: 1.5vw; /* Adjusted font size for txt3 on smaller screens */
             }
             .txt4 {
-                top: 70%; /* Adjusted position for txt4 on smaller screens */
-                font-size: 4vw; /* Increased font size for txt4 on smaller screens */
+                top: 65%; /* Adjusted position for txt4 on smaller screens */
+                font-size: 2vw; /* Adjusted font size for txt4 on smaller screens */
             }
             .logo2 {
-                width: 30%; /* Adjusted size for smaller screens */
+                width: 35%; /* Adjusted size for smaller screens */
                 max-width: 200px; /* Maximum width for smaller screens */
             }
             .discord-logo {
