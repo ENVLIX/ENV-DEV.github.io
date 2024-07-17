@@ -3,73 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENV Development</title>
+    <title>ENV Dev</title>
+    <link rel="icon" href="ENV DEV CROP.png" type="image/png"> <!-- Link to the favicon -->
     <style>
         body {
-            background-color: white;
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif;
         }
-           .logo2 {
-            position: absolute;
+        .logo1 {
+            position: fixed;
+            top: 2%;
+            left: 2%;
+            width: 15%; /* Adjusted size for the top logo */
+            max-width: 200px; /* Maximum width for logo1 */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .txt1 {
+            position: fixed;
+            top: 10%; /* Adjusted position for txt1 */
+            left: 20%; /* Position txt1 to the right of logo1 */
+            font-size: 3vw; /* Responsive font size for txt1 */
+        }
+        .txt2 {
+            position: fixed;
+            bottom: 4%;
+            left: 3%;
+            font-size: 1.5vw; /* Responsive font size for txt2 */
+        }
+        .txt3 {
+            position: fixed;
+            top: 30%; /* Adjusted position for txt3 */
+            left: 5%;
+            font-size: 2.5vw; /* Responsive font size for txt3 */
+        }
+        .txt4 {
+            position: fixed;
+            top: 60%; /* Adjusted position for txt4 */
+            left: 5%;
+            font-size: 3vw; /* Responsive font size for txt4 */
+        }
+        .logo2 {
+            position: fixed;
             top: 20%;
             right: 10%;
-            width: 20%;
-            max-width: 400px;
-            height: auto;
-        }
-        .discord-logo, .youtube-logo {
-            position: absolute;
-            cursor: pointer;
+            width: 25%; /* Adjusted size for the top logo */
+            max-width: 300px; /* Maximum width for logo2 */
+            height: auto; /* Maintain aspect ratio */
         }
         .discord-logo {
+            position: fixed;
             bottom: 5%;
             right: 3%;
-            width: 5%;
-            max-width: 50px;
-            height: auto;
+            width: 3%; /* Adjusted size for the Discord logo */
+            max-width: 50px; /* Maximum width for discord-logo */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer;
         }
         .youtube-logo {
+            position: fixed;
             bottom: 3%;
             right: 7%;
-            width: 7%;
-            max-width: 70px;
-            height: auto;
+            width: 4%; /* Adjusted size for the YouTube logo */
+            max-width: 70px; /* Maximum width for youtube-logo */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer;
         }
+
         @media (max-width: 768px) {
-            .logo1, .logo2 {
-                width: 20%;
-                max-width: 100px;
+            .logo1 {
+                width: 20%; /* Adjusted size for smaller screens */
+                max-width: 150px; /* Maximum width for smaller screens */
             }
             .txt1 {
-                font-size: 4vw;
-                top: 10%;
-                left: 14%;
+                top: 15%; /* Adjusted position for txt1 on smaller screens */
+                left: 30%; /* Adjusted position for txt1 on smaller screens */
+                font-size: 5vw; /* Increased font size for txt1 on smaller screens */
             }
             .txt2 {
-                font-size: 2vw;
-                bottom: 3%;
-                left: 4%;
+                font-size: 2vw; /* Increased font size for txt2 on smaller screens */
             }
             .txt3 {
-                font-size: 3vw;
-                top: 25%;
-                left: 6%;
+                top: 40%; /* Adjusted position for txt3 on smaller screens */
+                font-size: 3vw; /* Increased font size for txt3 on smaller screens */
             }
             .txt4 {
-                font-size: 4vw;
-                top: 50%;
-                left: 6%;
+                top: 70%; /* Adjusted position for txt4 on smaller screens */
+                font-size: 4vw; /* Increased font size for txt4 on smaller screens */
             }
-            .discord-logo, .youtube-logo {
-                width: 10%;
-                max-width: 50px;
+            .logo2 {
+                width: 30%; /* Adjusted size for smaller screens */
+                max-width: 200px; /* Maximum width for smaller screens */
             }
             .discord-logo {
-                bottom: 6%;
-                right: 4%;
+                width: 5%; /* Adjusted size for smaller screens */
+                max-width: 40px; /* Maximum width for smaller screens */
             }
             .youtube-logo {
-                bottom: 6%;
-                right: 14%;
+                width: 6%; /* Adjusted size for smaller screens */
+                max-width: 50px; /* Maximum width for smaller screens */
             }
         }
     </style>
