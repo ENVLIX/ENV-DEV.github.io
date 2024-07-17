@@ -3,49 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENV Dev</title>
-    <link rel="icon" href="ENV DEV CROP.png" type="image/png">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .logo1 {
-            position: absolute;
-            top: 2%;
-            left: 2%;
-            width: 10%;
-            max-width: 100px;
-            height: auto;
-        }
-        .txt1 {
-            position: absolute;
-            top: 6%;
-            left: 15%;
-            font-size: 2.5vw;
-        }
-        .txt2 {
-            position: absolute;
-            bottom: 4%;
-            left: 3%;
-            font-size: 1.2vw;
-        }
-        .txt3 {
-            position: absolute;
-            top: 22%;
-            left: 5%;
-            font-size: 1.5vw;
-        }
-        .txt4 {
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            font-size: 2vw;
-        }<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENV Development</title>
     <style>
         .logo2 {
@@ -73,6 +30,19 @@
             width: 7%;
             max-width: 70px;
             height: auto;
+        }
+        .logo1 {
+            width: 20%;
+            max-width: 400px;
+            height: auto;
+            background-image: url('ENV DEV.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media (prefers-color-scheme: dark) {
+            .logo1 {
+                background-image: url('ENV DEV1.png');
+            }
         }
         @media (max-width: 768px) {
             .logo1, .logo2 {
@@ -117,7 +87,7 @@
 <body>
     <div class="container">
         <img src="laptop.png" alt="Company Logo" class="logo2">
-        <img src="ENV DEV.png" alt="Company Logo" class="logo1" id="logo1">
+        <div class="logo1"></div>
         <h1 class="txt1">ENV Development</h1>
         <p class="txt2">-Official by Boris</p>
         <p class="txt3">
@@ -139,20 +109,5 @@
             <img src="youtube logo.png" alt="YouTube Logo" class="youtube-logo">
         </a>
     </div>
-    <script>
-        const logo = document.getElementById('logo1');
-        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function updateLogoBasedOnDarkMode(e) {
-            if (e.matches) {
-                logo.src = 'ENV DEV1.png';
-            } else {
-                logo.src = 'ENV DEV.png';
-            }
-        }
-
-        darkModeMediaQuery.addEventListener('change', updateLogoBasedOnDarkMode);
-        updateLogoBasedOnDarkMode(darkModeMediaQuery);
-    </script>
 </body>
 </html>
