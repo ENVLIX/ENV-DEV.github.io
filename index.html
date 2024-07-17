@@ -42,8 +42,7 @@
             position: fixed;
             top: 35%; /* Adjusted position for txt3 */
             left: 5%;
-            font-size: 1.5vw; /* Responsive font size for txt3 */
-            min-width: 12px; /* Minimum font size for txt3 */
+            font-size: calc(1.5vw + 1vmin); /* Responsive font size for txt3 */
             max-width: 90%; /* Limit maximum width to prevent overlap */
             white-space: nowrap; /* Prevent text from wrapping */
             overflow: hidden; /* Hide overflow if text exceeds width */
@@ -53,8 +52,7 @@
             position: fixed;
             top: 65%; /* Adjusted position for txt4 */
             left: 5%;
-            font-size: 1.8vw; /* Responsive font size for txt4 */
-            min-width: 14px; /* Minimum font size for txt4 */
+            font-size: calc(1.8vw + 1vmin); /* Responsive font size for txt4 */
             max-width: 90%; /* Limit maximum width to prevent overlap */
             white-space: nowrap; /* Prevent text from wrapping */
             overflow: hidden; /* Hide overflow if text exceeds width */
@@ -104,13 +102,11 @@
             }
             .txt3 {
                 top: 50%; /* Adjusted position for txt3 on smaller screens */
-                font-size: 1.2vw; /* Adjusted font size for txt3 on smaller screens */
-                min-width: 10px; /* Minimum font size for txt3 on smaller screens */
+                font-size: calc(1.2vw + 1vmin); /* Larger font size for txt3 on smaller screens */
             }
             .txt4 {
                 top: 75%; /* Adjusted position for txt4 on smaller screens */
-                font-size: 1.5vw; /* Adjusted font size for txt4 on smaller screens */
-                min-width: 12px; /* Minimum font size for txt4 on smaller screens */
+                font-size: calc(1.5vw + 1vmin); /* Larger font size for txt4 on smaller screens */
             }
             .logo2 {
                 width: 35%; /* Adjusted size for smaller screens */
@@ -123,15 +119,6 @@
             .youtube-logo {
                 width: 6%; /* Adjusted size for smaller screens */
                 max-width: 50px; /* Maximum width for smaller screens */
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1200px) {
-            .txt3 {
-                font-size: 2vw; /* Larger font size for txt3 on wider screens */
-            }
-            .txt4 {
-                font-size: 2.5vw; /* Larger font size for txt4 on wider screens */
             }
         }
     </style>
