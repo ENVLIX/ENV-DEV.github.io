@@ -41,7 +41,13 @@
             top: 50%;
             left: 5%;
             font-size: 2vw;
-        }
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENV Development</title>
+    <style>
         .logo2 {
             position: absolute;
             top: 20%;
@@ -111,7 +117,7 @@
 <body>
     <div class="container">
         <img src="laptop.png" alt="Company Logo" class="logo2">
-        <img src="ENV DEV CROP.png" alt="Company Logo" class="logo1">
+        <img src="ENV DEV.png" alt="Company Logo" class="logo1" id="logo1">
         <h1 class="txt1">ENV Development</h1>
         <p class="txt2">-Official by Boris</p>
         <p class="txt3">
@@ -133,5 +139,20 @@
             <img src="youtube logo.png" alt="YouTube Logo" class="youtube-logo">
         </a>
     </div>
+    <script>
+        const logo = document.getElementById('logo1');
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function updateLogoBasedOnDarkMode(e) {
+            if (e.matches) {
+                logo.src = 'ENV DEV1.png';
+            } else {
+                logo.src = 'ENV DEV.png';
+            }
+        }
+
+        darkModeMediaQuery.addEventListener('change', updateLogoBasedOnDarkMode);
+        updateLogoBasedOnDarkMode(darkModeMediaQuery);
+    </script>
 </body>
 </html>
