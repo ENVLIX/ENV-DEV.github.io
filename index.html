@@ -31,19 +31,6 @@
             max-width: 70px;
             height: auto;
         }
-        .logo1 {
-            width: 20%;
-            max-width: 400px;
-            height: auto;
-            background-image: url('ENV DEV.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        @media (prefers-color-scheme: dark) {
-            .logo1 {
-                background-image: url('ENV DEV1.png');
-            }
-        }
         @media (max-width: 768px) {
             .logo1, .logo2 {
                 width: 20%;
@@ -82,12 +69,19 @@
                 right: 14%;
             }
         }
+
+        /* Add this section to handle dark mode */
+        @media (prefers-color-scheme: dark) {
+            .logo1 {
+                content: url('ENV DEV1.png');
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="laptop.png" alt="Company Logo" class="logo2">
-        <div class="logo1"></div>
+        <img src="ENV DEV.png" alt="Company Logo" class="logo1">
         <h1 class="txt1">ENV Development</h1>
         <p class="txt2">-Official by Boris</p>
         <p class="txt3">
