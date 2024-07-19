@@ -66,25 +66,17 @@
             max-width: 300px; /* Maximum width for logo2 */
             height: auto; /* Maintain aspect ratio */
         }
-        .discord-logo {
+        .social-logo {
             position: fixed;
             bottom: 4%;
             right: 3%;
-            width: 3%; /* Adjusted size for the Discord logo */
-            max-width: 50px; /* Maximum width for discord-logo */
-            height: auto; /* Maintain aspect ratio */
-            cursor: pointer;
-        }
-        .youtube-logo {
-            position: fixed;
-            bottom: 3%;
-            right: 7%;
-            width: 4%; /* Adjusted size for the YouTube logo */
-            max-width: 70px; /* Maximum width for youtube-logo */
+            width: 3%; /* Adjusted size for the social logos */
+            max-width: 50px; /* Maximum width for social logos */
             height: auto; /* Maintain aspect ratio */
             cursor: pointer;
         }
 
+        /* Adjustments for smaller screens */
         @media (max-width: 768px) {
             .logo1 {
                 width: 25%; /* Adjusted size for smaller screens */
@@ -112,13 +104,9 @@
                 width: 35%; /* Adjusted size for smaller screens */
                 max-width: 200px; /* Maximum width for smaller screens */
             }
-            .discord-logo {
+            .social-logo {
                 width: 5%; /* Adjusted size for smaller screens */
                 max-width: 40px; /* Maximum width for smaller screens */
-            }
-            .youtube-logo {
-                width: 6%; /* Adjusted size for smaller screens */
-                max-width: 50px; /* Maximum width for smaller screens */
             }
         }
     </style>
@@ -140,10 +128,16 @@
             👨‍💻
         </p>
         <a href="https://discord.gg/qXSHtUyC7g" target="_blank">
-            <img src="Discord logo.png" alt="Discord Logo" class="discord-logo">
+            <img src="Discord logo.png" alt="Discord Logo" class="social-logo" style="right: 15%;">
         </a>
         <a href="https://www.youtube.com/@envdevelopment?si=_mVcrNicQd7CZ_Ip" target="_blank">
-            <img src="youtube logo.png" alt="YouTube Logo" class="youtube-logo">
+            <img src="youtube logo.png" alt="YouTube Logo" class="social-logo" style="right: 10%;">
+        </a>
+        <a href="https://www.tiktok.com/@envdevelopment" target="_blank">
+            <img src="tik.png" alt="TikTok Logo" class="social-logo" style="right: 20%;">
+        </a>
+        <a href="https://envdevelopment.itch.io" target="_blank">
+            <img src="itch.png" alt="Itch.io Logo" class="social-logo" style="right: 25%;">
         </a>
     </div>
 </body>
