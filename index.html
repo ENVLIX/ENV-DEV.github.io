@@ -9,19 +9,20 @@
         body {
             margin: 0; /* Remove default margin */
             font-family: Arial, sans-serif;
+            background: #ffffff;
         }
         .logo1 {
             position: fixed;
             top: 2%;
             left: 2%;
-            width: 15%; /* Adjusted size for the top logo */
+            width: 10%; /* Adjusted size for the top logo */
             max-width: 200px; /* Maximum width for logo1 */
             height: auto; /* Maintain aspect ratio */
         }
         .txt1 {
             position: fixed;
-            top: 6%; /* Adjusted position for txt1 */
-            right: 45%; /* Adjusted position for txt1 */
+            top: 4%; /* Adjusted position for txt1 */
+            right: 60%; /* Adjusted position for txt1 */
             font-size: 3vw; /* Responsive font size for txt1 */
             max-width: 40%; /* Limit maximum width to prevent overlap */
             white-space: nowrap; /* Prevent text from wrapping */
@@ -30,9 +31,9 @@
         }
         .txt2 {
             position: fixed;
-            bottom: 2%; /* Adjusted position for txt2 */
+            bottom: 4%; /* Adjusted position for txt2 */
             left: 5%; /* Adjusted position for txt2 */
-            font-size: 1.2vw; /* Responsive font size for txt2 */
+            font-size: 0.9vw; /* Responsive font size for txt2 */
             max-width: 90%; /* Limit maximum width to prevent overlap */
             white-space: nowrap; /* Prevent text from wrapping */
             overflow: hidden; /* Hide overflow if text exceeds width */
@@ -58,13 +59,15 @@
             overflow: hidden; /* Hide overflow if text exceeds width */
             text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
-        .logo2 {
+        .txt5 {
             position: fixed;
-            top: 20%;
-            right: 10%;
-            width: 25%; /* Adjusted size for the top logo */
-            max-width: 300px; /* Maximum width for logo2 */
-            height: auto; /* Maintain aspect ratio */
+            bottom: 1%; /* Adjusted position for txt5 */
+            left: 5%; /* Adjusted position for txt5 */
+            font-size: 1.2vw; /* Responsive font size for txt5 */
+            max-width: 90%; /* Limit maximum width to prevent overlap */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text exceeds width */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
         }
         .social-logo {
             position: fixed;
@@ -89,8 +92,12 @@
                 max-width: 80%; /* Limit maximum width for txt1 on smaller screens */
             }
             .txt2 {
-                bottom: 2%; /* Adjusted position for txt2 on smaller screens */
-                font-size: 1vw; /* Adjusted font size for txt2 on smaller screens */
+                bottom: 4%; /* Adjusted position for txt2 on smaller screens */
+                font-size: 0.7vw; /* Adjusted font size for txt2 on smaller screens */
+            }
+            .txt5 {
+                bottom: 1%; /* Adjusted position for txt5 on smaller screens */
+                font-size: 1vw; /* Adjusted font size for txt5 on smaller screens */
             }
             .txt3 {
                 top: 50%; /* Adjusted position for txt3 on smaller screens */
@@ -113,15 +120,14 @@
 </head>
 <body>
     <div class="container">
-        <img src="laptop.png" alt="Company Logo" class="logo2">
         <img src="ENV DEV.png" alt="Company Logo" class="logo1">
         <h1 class="txt1">ENV Development</h1>
-        <p class="txt2">-Official by Boris</p>
+        <p style=color:#dd6d5a class="txt2">-Official by Boris</p>
+        <p style=color:#9e1e07 class="txt5">-Updated by Envilix</p>
         <p class="txt3">
-            At Our studios We focus on making:<br><br>
+            We focus on making:<br><br>
             - good quality code<br>
-            - easy to follow tutorials<br>
-            - fun to play games<br>
+            - fun and simple to play games<br>
             - fun events for server members<br><br><br>
         <a href="https://discord.gg/qXSHtUyC7g" target="_blank">
             <img src="Discord logo.png" alt="Discord Logo" class="social-logo" style="right: 15%;">
@@ -135,6 +141,9 @@
         <a href="https://env-development.itch.io/" target="_blank">
             <img src="itch.png" alt="Itch.io Logo" class="social-logo" style="right: 25%;">
         </a>
+    </div>
+</body>
+</html>
     </div>
 </body>
 </html>
